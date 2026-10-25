@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Signos zodiacales</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/signos.css">
+</head>
+
+<body>
+    <nav class="navbar bg-primary navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="img/cecy.webp" alt="Logo" width="30" height="30">PRACTICAS JAVASCRIPT</a>
+        </div>
+    </nav>
+
+    <main class="container p-4 mt-4 card zodiac-card">
+        <h1 class="text-center">SIGNOS ZODIACALES</h1>
+        <hr>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h5 id="valorDia">DIA 1</h5>
+                <input type="range" class="form-range" id="dia" min="1" max="31" value="1"aria-label="Seleccionar día">
+
+                <h5 class="mt-4">MES</h5>
+
+                <select id="mes"
+                        class="form-select"
+                        aria-label="Seleccionar mes">
+
+                    <option value="ENERO">ENERO</option>
+                    <option value="FEBRERO">FEBRERO</option>
+                    <option value="MARZO">MARZO</option>
+                    <option value="ABRIL">ABRIL</option>
+                    <option value="MAYO">MAYO</option>
+                    <option value="JUNIO">JUNIO</option>
+                    <option value="JULIO">JULIO</option>
+                    <option value="AGOSTO">AGOSTO</option>
+                    <option value="SEPTIEMBRE">SEPTIEMBRE</option>
+                    <option value="OCTUBRE">OCTUBRE</option>
+                    <option value="NOVIEMBRE">NOVIEMBRE</option>
+                    <option value="DICIEMBRE">DICIEMBRE</option>
+                </select>
+
+                <h2 id="fecha" class="text-center mt-4">
+                    FECHA
+                </h2>
+
+                <button type="button"id="reset"class="btn btn-dark w-100 mt-3">RESET</button>
+            </div>
+            <div class="col-md-6 text-center mt-4 mt-md-0">
+                <img src="img/signos/logo.jpg" id="signo" class="img-fluid zodiac-image" alt="Signo zodiacal">
+            </div>
+        </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/signos.js"></script>
+
+</body>
+</html>

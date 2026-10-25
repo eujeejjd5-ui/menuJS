@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Salario Neto</title>
+
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <script src="js/appSalarioNeto.js"></script>
+</head>
+
+<body onload="calcularSalarioNeto()">
+
+    <div class="container">
+        <h1 class="text-center">Salario Neto</h1>
+
+        <table class="table">
+            <tr>
+                <td>Puesto</td>
+                <td>Horas</td>
+                <td>Años</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <select id="puesto" class="form-control"
+                        onchange="calcularSalarioNeto()">
+                        <option value="1">Gerente</option>
+                        <option value="2">Secretaria</option>
+                        <option value="3">Cajero</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="horas" class="form-control"
+                        onchange="calcularSalarioNeto()">
+                        <script>
+                            for (var i = 0; i <= 50; i++) {
+                                document.write(
+                                    '<option value="' + i + '">' + i + '</option>'
+                                );
+                            }
+                        </script>
+                    </select>
+                </td>
+
+                <td>
+                    <select id="anios" class="form-control"
+                        onchange="calcularSalarioNeto()">
+                        <script>
+                            for (var i = 0; i <= 40; i++) {
+                                document.write(
+                                    '<option value="' + i + '">' + i + '</option>'
+                                );
+                            }
+                        </script>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <div class="row">
+            <div class="col-md-6">
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th colspan="2">PERCEPCIONES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sueldo Base</td>
+                            <td id="sueldoBase"></td>
+                        </tr>
+                        <tr>
+                            <td>Canasta Básica</td>
+                            <td id="canastaBasica"></td>
+                        </tr>
+                        <tr>
+                            <td>Apoyo</td>
+                            <td id="apoyo"></td>
+                        </tr>
+                        <tr>
+                            <td>Antigüedad</td>
+                            <td id="antiguedad"></td>
+                        </tr>
+                        <tr>
+                            <td>Estímulo</td>
+                            <td id="estimulo"></td>
+                        </tr>
+                        <tr>
+                            <th>TOTAL PERCEPCIONES</th>
+                            <th id="totalPercepciones"></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-md-6">
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th colspan="2">DEDUCCIONES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ISR</td>
+                            <td id="ISR"></td>
+                        </tr>
+                        <tr>
+                            <td>Servicio de Salud</td>
+                            <td id="servicioSalud"></td>
+                        </tr>
+                        <tr>
+                            <td>AFORE</td>
+                            <td id="AFORE"></td>
+                        </tr>
+                        <tr>
+                            <td>Sindicato</td>
+                            <td id="sindicato"></td>
+                        </tr>
+                        <tr>
+                            <th>TOTAL DEDUCCIONES</th>
+                            <th id="totalDeducciones"></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h3 class="text-center">SALARIO NETO</h3>
+        <h3 class="text-center" id="salario"></h3>
+    </div>
+
+</body>
+</html>

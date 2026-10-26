@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: "Times New Roman", serif;
+    color: black;
+    background-color: white;
+    padding: 15px;
+}
+
+header img {
+    width: 200px;
+    max-width: 80%;
+    height: auto;
+    object-fit: contain;
+}
+
+h1 {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #ddd;
+    margin: 15px 0;
+}
+
+h4 {
+    margin: 12px 0;
+}
+
+select {
+    padding: 4px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+div#img {
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+    border: 2px solid black;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+div#img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#precio {
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+h3 {
+    font-size: 17px;
+    margin: 15px 0 10px;
+}
+
+.plazos label {
+    display: block;
+    margin: 7px 0;
+    font-size: 14px;
+}
+
+.plazos input {
+    margin-right: 5px;
+}
+
+.cantidad {
+    margin: 18px 0;
+}
+
+.cantidad label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.cantidad input {
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+}
+
+.resultados {
+    margin: 20px auto;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+@media (max-width: 450px) {
+    div#img {
+        width: 90vw;
+        height: 90vw;
+        max-width: 400px;
+        max-height: 400px;
+    }
+}

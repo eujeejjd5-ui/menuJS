@@ -1,0 +1,10 @@
+.navbar {
+    background-color: #087ff5 !important;
+    min-height: 28px;
+    padding: 4px 12px;
+}
+
+.navbar-brand {
+    font-size: 12px;
+    font-weight: bold;
+}

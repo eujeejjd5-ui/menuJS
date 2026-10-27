@@ -10,16 +10,14 @@ body {
 }
 
 .navbar {
-    background-color: #007bff !important;
-    padding: 15px 25px;
+    background-color: #087ff5 !important;
+    min-height: 28px;
+    padding: 4px 12px;
 }
 
 .navbar-brand {
-    color: white !important;
+    font-size: 12px;
     font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 .navbar-brand img {

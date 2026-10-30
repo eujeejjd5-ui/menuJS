@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Area del triangulo</title>
+</head>
+<body>
+    <center>
+    <h1>Area del triangulo</h1>
+    <table width="100%" border>
+        <tr>
+            <td><h3>Base</h3>
+                <input type="range" id="base" min="1" max="100" value="1" oninput="calcular()"><span id="vb">1</span><br>
+                <h3>Altura</h3>
+                <input type="range" id="altura" min="1" max="100" value="1" oninput="calcular()"><span id="va">1</span><br>
+                <button onclick="reset()">RESET</button>
+            </td>
+            <td><h3>AREA</h3>
+                <h2 id="area">0</h2>
+            </td>
+        </tr>
+    </table>
+    </center>
+    <script src="js/areaV1.js"></script>
+</body>
+</html>

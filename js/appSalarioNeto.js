@@ -15,7 +15,7 @@ function calcularSalarioNeto() {
         case 4:sueldoHora = 80;
     }
 
-    let sueldoBase = sueldoHora * horas;
+    let sueldoBase = parseFloat(sueldoHora * horas);
     let canastaBasica = parseFloat(sueldoBase * 0.025);
     let apoyo = parseFloat(sueldoBase * 0.05);
     let antiguedad = parseFloat(anios * 150);
